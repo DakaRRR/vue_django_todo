@@ -2,8 +2,8 @@
 
     <table class="table">
       <thead>
-        <th>Title</th>
-        <th>Completed</th>
+        <th>Что нужно сделать?</th>
+        <th>Сделано</th>
       </thead>
       <tbody>
           <tr v-for="todo in todos" :key="todo.id" @dblclick="$data.todo=todo">
@@ -18,7 +18,7 @@
     <form @submit.prevent="submitForm">
       <div class="form-group row">
         <input type="text" class="form-control col-3 mx-2" v-model="todo.title">
-        <button class="btn btn-success">Submit</button>
+        <button class="btn btn-success">Создать</button>
       </div>
     </form>
 </template>
